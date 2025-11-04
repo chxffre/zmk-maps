@@ -71,7 +71,7 @@
 
         Symbols {
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH        &kp DOLLAR       &kp PERCENT  &kp LA(F18)      &kp LA(C_MUTE)   &kp CARET  &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH        &kp DOLLAR       &kp PERCENT  &kp LA(F18)      &kp LA(LG(F18))  &kp CARET  &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &trans  &kp GRAVE        &trans       &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans       &kp LA(LC(F18))  &kp LA(LS(F18))  &trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PLUS              &kp EQUAL              &kp MINUS
 &trans  &trans           &trans       &trans          &trans           &trans                                         &trans     &trans            &trans             &trans                &kp BACKSLASH          &trans
                                       &trans          &trans           &trans                                         &trans     &trans            &trans
@@ -80,7 +80,7 @@
             sensor-bindings =
                 <&inc_dec_kp LA(F16) LA(F17)>,
                 <&inc_dec_kp LA(LC(F16)) LA(LC(F17))>,
-                <&inc_dec_kp LA(C_VOLUME_DOWN) LA(C_VOLUME_UP)>,
+                <&inc_dec_kp LA(LG(F16)) LA(LG(F17))>,
                 <&inc_dec_kp C_BRIGHTNESS_DEC C_BRIGHTNESS_INC>;
         };
 
