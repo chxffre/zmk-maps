@@ -20,19 +20,14 @@
             bindings = <&bootloader>;
             key-positions = <40 41 42 43 44 45>;
         };
+
+        bluetooth-clear {
+            bindings = <&bt BT_CLR>;
+            key-positions = <0 28 13 39>;
+        };
     };
 
     behaviors {
-        tap_pref: tap_preferred {
-            compatible = "zmk,behavior-hold-tap";
-            label = "Tap Preferred";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            flavor = "tap-preferred";
-        };
-
         tab_esc: tab_esc {
             compatible = "zmk,behavior-mod-morph";
             label = "TAB_ESC";
@@ -71,10 +66,10 @@
 
         Left {
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH        &kp DOLLAR       &kp PERCENT  &kp LA(F18)      &kp LA(LG(F18))  &kp CARET  &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp GRAVE        &trans       &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans       &kp LA(LC(F18))  &kp LA(LS(F18))  &trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PLUS              &kp EQUAL              &kp MINUS
-&trans  &trans           &trans       &trans          &trans           &trans                                         &trans     &trans            &trans             &trans                &kp BACKSLASH          &trans
-                                      &trans          &trans           &trans                                         &trans     &trans            &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH        &kp DOLLAR       &kp PERCENT      &kp LA(F18)      &kp LA(LG(F18))  &kp CARET  &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &kp GRAVE        &trans       &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans           &kp LA(LC(F18))  &kp LA(LS(F18))  &trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PLUS              &kp EQUAL              &kp MINUS
+&trans  &trans           &trans       &trans          &trans           &kp PRINTSCREEN                                    &trans     &trans            &trans             &trans                &kp BACKSLASH          &trans
+                                      &trans          &trans           &trans                                             &trans     &trans            &trans
             >;
 
             sensor-bindings =
@@ -86,10 +81,10 @@
 
         Right {
             bindings = <
-&trans  &kp KP_MULTIPLY  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_MINUS  &bt BT_SEL 0  &bt BT_SEL 2  &bootloader      &trans    &kp UP_ARROW  &trans     &trans  &trans
-&trans  &kp KP_PLUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_EQUAL  &bt BT_SEL 1  &bt BT_CLR    &kp PRINTSCREEN  &kp LEFT  &kp DOWN      &kp RIGHT  &trans  &trans
-&trans  &trans           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans                                    &trans           &trans    &trans        &trans     &trans  &trans
-                                       &trans        &kp NUMBER_0  &trans                                    &trans           &trans    &trans
+&trans  &kp KP_MULTIPLY  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_MINUS  &bt BT_SEL 0  &bt BT_SEL 2  &bootloader  &trans    &kp UP_ARROW  &trans     &trans  &trans
+&trans  &kp KP_PLUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_EQUAL  &bt BT_SEL 1  &bt BT_SEL 3  &trans       &kp LEFT  &kp DOWN      &kp RIGHT  &trans  &trans
+&trans  &trans           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans                                    &trans       &trans    &trans        &trans     &trans  &trans
+                                       &trans        &kp NUMBER_0  &trans                                    &trans       &trans    &trans
             >;
         };
     };
