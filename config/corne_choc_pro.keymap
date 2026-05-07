@@ -45,10 +45,10 @@
             display-name = "Base Layer";
 
             // --------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |  MUTE |  PP   |  Y  |  U   |  I  |  O  |  P  | BSPC |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |  LALT |  RALT |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |               |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
+            // | TAB / ESC |  Q  |  W  |  E  |  R  |  T  |  MUTE |  PP   |  Y  |  U   |  I  |  O  |  P  | BSPC |
+            // | L_CTRL    |  A  |  S  |  D  |  F  |  G  |  LALT |  RALT |  H  |  J   |  K  |  L  |  ;  |  '   |
+            // | LAYER_1   |  Z  |  X  |  C  |  V  |  B  |               |  N  |  M   |  ,  |  .  |  /  | RETURN  |
+            //                 | L_ALT | SHIFT | CMD |               | R_ALT | SPACE  | LAYER_2 |
 
             bindings = <
 &tab_esc   &kp Q  &kp W  &kp E         &kp R           &kp T             &kp F18      &kp C_MUTE   &kp Y          &kp U      &kp I      &kp O    &kp P     &kp BSPC
